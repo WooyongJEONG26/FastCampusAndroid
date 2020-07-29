@@ -102,5 +102,5 @@ fun main(array: Array<String>) {
     } while (b < c)
     // difference of one iteration and multiple iteration
     // and whether Kotlin proceed statement or not
-    
+
 }
