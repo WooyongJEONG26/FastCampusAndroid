@@ -27,4 +27,8 @@ class TV {
             println("TV needs to be turned on first")
         }
     }
+
+    fun addChannel(newChannel: String){
+        this.channels.add(newChannel)
+    }
 }

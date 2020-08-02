@@ -25,3 +25,4 @@ class Calculator {
         return inputX * inputY
     }
 }
+
