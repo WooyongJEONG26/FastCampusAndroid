@@ -11,8 +11,18 @@ package org.techtown.myapplication.Kotlin
 //
 //    }
 //}
-
+// if function has similar or same function got to use inheritance
+// if function has different function but have to be named similarly interface
 interface Person_ {
     fun eat()
     fun sleep()
+}
+
+class Student_ : Person_{
+    override fun eat(){
+
+    }
+    override fun sleep(){
+
+    }
 }
