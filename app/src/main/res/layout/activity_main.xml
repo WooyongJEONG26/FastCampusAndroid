@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--Parent view only works as a standard of the screen-->
+<!--It helps where child view being set-->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -6,18 +8,18 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
-<!--View component can be surrounded by <\>-->
+
+    <ImageView
+        android:layout_width="300dp"
+        android:background="#3F51B5"
+        android:layout_height="300dp"
+        />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="20dp"
-        android:text="Fuck you"
-        android:textColor="@color/colorAccent" />
-<!--also like this this let view component to have son component view-->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Fuck you bitch"></TextView>
-
-
+        android:text="안녕하세요"
+        android:textSize="50dp"
+        android:background="#E91E63"
+        />
 </LinearLayout>
