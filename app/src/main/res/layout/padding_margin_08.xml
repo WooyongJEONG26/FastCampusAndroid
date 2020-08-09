@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!--In the case of margin it's about how its distance from parent view-->
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="안녕하세요"
+        android:background="#3F51B5"/>
+<!--while in the case of padding its distance of contents within view-->
+    <TextView
+        android:id="@+id/view2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="안녕하세요"
+        android:paddingLeft="10dp"
+        android:paddingTop="30dp"
+        android:background="#F44336"/>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#9C27B0"
+        android:layout_margin="200dp"
+        />
+
+</LinearLayout>
