@@ -8,4 +8,4 @@
         android:layout_height="300dp"
         android:src="@drawable/ic_launcher_foreground"/>
 
-</LinearLayo
+</LinearLayout>
