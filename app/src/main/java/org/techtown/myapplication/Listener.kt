@@ -6,9 +6,9 @@ import android.util.Log
 import android.view.View
 import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_listener.*
-
+// Listener always catches user behavior or request
 class Listener : AppCompatActivity() {
-
+    var number: Int = 10
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_listener)
@@ -23,24 +23,32 @@ class Listener : AppCompatActivity() {
         // view 에 setOn~~ 를 이용해서 사용자의 입력 값을 사용가능하다
         fuckyou.setOnClickListener {
             Log.d("click", "fucking clicked")
+            fuckyou.setText("What's up bitch")
+            image.setImageResource(R.drawable.twicechaeyoung)
+            number += 10
+            Log.d("number", ""+number)
+
         }
 
-        // 2. 익명 함수 방식
-        fuckyou.setOnClickListener(object: View.OnClickListener{
-            override fun onClick(v: View?) {
-                Log.d("click", "fucking clicked")
-            }
-        })
+//        // 2. 익명 함수 방식
+//        fuckyou.setOnClickListener(object: View.OnClickListener{
+//            override fun onClick(v: View?) {
+//                Log.d("click", "fucking clicked")
+//            }
+//        })
+//
+//        // 3. 이름이 필요한 경우(click)
+//        val click = object: View.OnClickListener{
+//            // Interface of OnclickListner
+//            // thus onClick should be implemented
+//            override fun onClick(v: View?) {
+//                Log.d("click", "fucking clicked")
+//            }
+//        }
 
-        // 3. 이름이 필요한 경우(click)
-        val click = object: View.OnClickListener{
-            // Interface of OnclickListner
-            // thus onClick should be implemented
-            override fun onClick(v: View?) {
-                Log.d("click", "fucking clicked")
-            }
-        }
+//        fuckyou.setOnClickListener(click)
 
-        fuckyou.setOnClickListener(click)
+
+
     }
 }

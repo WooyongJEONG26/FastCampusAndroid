@@ -13,4 +13,12 @@
         android:text="fuck you"
         android:id="@+id/fuckyou"
         />
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/image"
+        android:src="@drawable/gradient"/>
+
 </LinearLayout>
