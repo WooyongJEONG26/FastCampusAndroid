@@ -8,6 +8,7 @@
     tools:context=".CalcualtorT">
 
     <TextView
+        android:id="@+id/resulthere"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#2196F3"
@@ -50,6 +51,7 @@
                 android:textColor="#ffffff"/>
 
             <TextView
+                android:id="@+id/seven"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
