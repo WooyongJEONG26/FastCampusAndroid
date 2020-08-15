@@ -5,13 +5,15 @@
     android:orientation="vertical"
     android:weightSum="7">
 
-    <!--    Result part-->
+    <!--Result part-->
+    <!--Could be just a single view component-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="6"
         android:orientation="horizontal">
 
+        <!--layout_height = wrap_content for changes of wrap -->
         <TextView
             android:id="@+id/result"
             android:layout_width="match_parent"

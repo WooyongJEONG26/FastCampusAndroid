@@ -9,6 +9,9 @@ class CalcualtorPractice : AppCompatActivity() {
     var firstClick: Int = 0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        // bit complicated could be simple
+        // by using .toInt(), .toString()
+        // still understanding of using built in function for Android got better
         setContentView(R.layout.calculator)
         pad1.setOnClickListener {
             if (firstClick != 0){
