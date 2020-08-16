@@ -1,0 +1,16 @@
+03. Intent
+- 의도 -> 요구(it is like a request things that mobile has to do)
+- Request to whom?
+    - Activity and other activity
+    - Android System and my App
+    - other App and my App (There should be some agreements between apps)
+
+
+- Type of request(intent)
+    - request with a no return
+    - request with a return
+
+
+- Type of intent
+    - Implicit -> Let any app that is available to start the activity
+    - Explicit -> We set who to start activity
