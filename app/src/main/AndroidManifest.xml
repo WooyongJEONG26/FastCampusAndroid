@@ -9,16 +9,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Parctice3T">
+        <activity android:name=".ContextActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Practice2"></activity>
+        <activity android:name=".ResourceActivity">
+
+        </activity>
+        <activity android:name=".NullSafety"></activity>
+        <activity android:name=".Fragment" />
+        <activity android:name=".Parctice3T" />
+        <activity android:name=".Practice2" />
         <activity android:name=".Intent2" />
-        <activity android:name=".Intent1"></activity>
+        <activity android:name=".Intent1" />
         <activity android:name=".CalcualtorT" />
         <activity android:name=".CalcualtorPractice" />
         <activity android:name=".Listener" />

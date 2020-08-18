@@ -1,0 +1,34 @@
+
+Null Safety
+-> Null 에 대해서 안전하다
+-> 코트린의 특징
+
+Null vs 0
+-> 0: 휴지를 다 쓰고 휴지심만 남은 상태
+-> Null : 휴지심도 없는 상태, 존재 하지 않는 상태, 모르는 상태
+
+Why Null is not safe
+-> 0 + 10 = 10
+-> Null + 10 = ? -> 에러
+-> button.setOnClickListener
+-> null.setOnClickListener -> 에러
+
+How we did in Java
+if (number != null){
+    number + 10
+}
+
+if (button != null){
+    button.setOnClickListener
+}
+
+코틀린이 Null Safety 하기 위해서 사용하는 문법
+-> ? : Null 이 아니라면 이하 구문 실행
+-> !! : Null 이 아님을 개발자 보장한다.(Not recomanded)
+number?
+button?.setOnCLickListener
+button!!.setOnClickListener
+
+Null 이 될수 있는 타입
+Int, Double, Float, Class -> Null 이 될수 없는 타입
+Int?, Double?, Float?, Class? -> Null 이 될 수 있는 타입
