@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="org.techtown.myapplication">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,17 +11,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ContextActivity">
+        <activity android:name=".AddviewAcitivty">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ResourceActivity">
-
+        <activity android:name=".LiabraryActivity">
         </activity>
-        <activity android:name=".NullSafety"></activity>
+        <activity android:name=".ThreadActivity"></activity>
+        <activity android:name=".ContextActivity" />
+        <activity android:name=".ResourceActivity" />
+        <activity android:name=".NullSafety" />
         <activity android:name=".Fragment" />
         <activity android:name=".Parctice3T" />
         <activity android:name=".Practice2" />
