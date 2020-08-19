@@ -18,7 +18,7 @@ class AddviewAcitivty : AppCompatActivity() {
         setContentView(R.layout.activity_addview_acitivty)
         val carList = ArrayList<CarForList>()
 
-        for(i in 0 until 100){
+        for (i in 0 until 100) {
             carList.add(CarForList("" + i + "번째 자동차", "" + i + "순위 엔진"))
         }
 
@@ -26,7 +26,7 @@ class AddviewAcitivty : AppCompatActivity() {
         val inflater = LayoutInflater.from(this@AddviewAcitivty)
 
         for (i in 0 until carList.size) {
-           val itemView =  inflater.inflate(R.layout.addview_item, null)
+            val itemView = inflater.inflate(R.layout.addview_item, null)
             val carNameView = itemView.findViewById<TextView>(R.id.car_name)
             val carEngineView = itemView.findViewById<TextView>(R.id.car_engine)
             val imageView = itemView.findViewById<ImageView>(R.id.image_nayoun)
@@ -42,7 +42,5 @@ class AddviewAcitivty : AppCompatActivity() {
     }
 }
 
-class CarForList(val name: String, val engine: String){
-
-
+class CarForList(val name: String, val engine: String) {
 }

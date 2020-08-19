@@ -14,7 +14,7 @@ class Fragment : AppCompatActivity() {
 
         val fragment1: FragmentOne = FragmentOne()
 
-        // How to add data input a fragment
+        // How to add data into a fragment
         // got to make a bundle
         val bundle: Bundle = Bundle()
         bundle.putString("Hello","fuckyou")
