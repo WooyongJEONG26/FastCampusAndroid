@@ -37,7 +37,6 @@ class CellphoneList : AppCompatActivity() {
         contact_info.setOnClickListener{
             val fragmentManager: FragmentManager = supportFragmentManager
             val fragmentTransaction = fragmentManager.beginTransaction()
-            fragmentTransaction.replace()
         }
 
 
