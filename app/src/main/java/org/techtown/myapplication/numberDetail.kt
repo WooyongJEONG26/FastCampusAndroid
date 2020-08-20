@@ -12,12 +12,16 @@ class numberDetail : AppCompatActivity() {
 
         getPersonInfo()
 
+        // onBackPressed()
         back.setOnClickListener{
             onBackPressed()
         }
 
     }
 
+
+    // getting info from an intent
+    // and setting textView based on retrieved info
     fun getPersonInfo(){
         val name = intent.getStringExtra("name")
         val number = intent.getStringExtra("number")
